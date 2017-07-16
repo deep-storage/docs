@@ -11,5 +11,9 @@
     * [state](state.md)
     * [stateIn](statein.md)
     * [deep](deep.md)
+    * [subscription](subscription.md)
+  * Subscription
+    * [subscribeTo](subscribeto.md)
+    * [cancel](cancel.md)
   * [deep hoc](deep-hoc.md)
 
