@@ -20,7 +20,7 @@ const storage = new DeepStorage({
 });
 
 const employeesStorage = storage.deep('employees');
-const companiesStorage = storage.seep('companies');
+const companiesStorage = storage.deep('companies');
 
 const subscription = storage.subscription((path, newState, oldState) => {
     console.log(path, 'updated');
@@ -39,8 +39,6 @@ In a typical React app, components will usually only need to react to part of th
 * Only update the components that are affected by the part of the state that has updated
 * Only trigger a single state update for a component when state changes
 * Services built on top of the state tree only need to depend on the part of the tree they are responsible for
-
-
 
 
 
