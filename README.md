@@ -7,6 +7,7 @@ Key features of Deep Storage:
 * Simple to use observable state management
 * Optimised for use with React
 * No global state
+* Simple way to manage shared state with or without a fully fledged flux pattern
 
 ## The gist of Deep Storage
 
@@ -22,7 +23,7 @@ const storage = new DeepStorage({
 
 ### 2. Create a view that responds to changes in state
 
-The deep function wraps a regular React Component, passing in state from storage via props. In this case, it is taking the 'timer' property from storage and attaching it to a 'timer' prop. 
+The deep function wraps a regular React Component, passing in state from storage via props. In this case, it is taking the 'timer' property from storage and attaching it to a 'timer' prop.
 
 ```
 import {deep} from 'deep-storage/react';
