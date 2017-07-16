@@ -12,6 +12,8 @@ Key features of Deep Storage:
 
 ### 1. Create a new Deep Storage instance and initialise its state
 
+Initialise DeepStorage with a regular JavaScript object
+
 ```
 const storage = new DeepStorage({
     timer: 0
@@ -19,6 +21,8 @@ const storage = new DeepStorage({
 ```
 
 ### 2. Create a view that responds to changes in state
+
+The deep function wraps a regular React Component, passing in state from storage via props. In this case, it is taking the 'timer' property from storage and attaching it to a 'timer' prop. 
 
 ```
 import {deep} from 'deep-storage/react';
@@ -44,6 +48,8 @@ ReactDOM.render((
 ```
 
 ### 3. Modify the State
+
+All state changes go through storage so that subscribers are notified.
 
 ```
 function resetTimer() {
