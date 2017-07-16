@@ -21,7 +21,7 @@ const storage = new DeepStorage({
 ### 2. Create a view that responds to changes in state
 
 ```
-import {DeepObserver} from 'deep-storage/react';
+import {deep} from 'deep-storage/react';
 
 class TimerView extends React.Component {
     render() {
@@ -36,10 +36,10 @@ class TimerView extends React.Component {
     }
 };
 
+const DeepTimerView = deep(storage, {timer: ['timer']})(TimerView);
+
 ReactDOM.render((
-    <DeepObserver storage={storage} paths={{timer: ['timer']}}>
-        <TimerView resetTimer={resetTimer}/>
-    </DeepObserver>
+    <DeepTimerView resetTimer={resetTimer}/>
 ), document.body);
 ```
 
@@ -53,7 +53,6 @@ function resetTimer() {
 setInterval(function tick() {
     storage.updateIn('timer')(prev => prev + 1);
 }, 1000);
-
 ```
 
 
