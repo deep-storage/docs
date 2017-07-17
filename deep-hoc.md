@@ -3,7 +3,8 @@
 Wraps a react component, adding subscriptions to state changes and an optimised implementation of shouldComponentUpdate e.g.:
 
 ```
-import {deep} from 'deep-storage/react';
+import {deep} from 'deep-storage-react';
+import deepStorage from 'deep-storage';
 
 class TimerView extends React.Component {
     render() {
@@ -18,7 +19,7 @@ class TimerView extends React.Component {
     }
 };
 
-const storage = new DeepStorage({
+const storage = deepStorage({
     timer: 0
 });
 

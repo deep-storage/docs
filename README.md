@@ -25,7 +25,9 @@ yarn install deep-storage-react
 Initialise DeepStorage with a regular JavaScript object
 
 ```
-const storage = new DeepStorage({
+import deepStorage from 'deep-storage';
+
+const storage = deepStorage({
     timer: 0
 });
 ```
