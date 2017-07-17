@@ -9,6 +9,15 @@ Key features of Deep Storage:
 * No global state
 * Simple way to manage shared state with or without a fully fledged flux pattern
 
+## Installation
+
+```
+yarn install deep-storage
+
+# for react bindings
+yarn install deep-storage-react
+```
+
 ## The gist of Deep Storage
 
 ### 1. Create a new Deep Storage instance and initialise its state
