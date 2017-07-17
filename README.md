@@ -26,7 +26,7 @@ const storage = new DeepStorage({
 The deep function wraps a regular React Component, passing in state from storage via props. In this case, it is taking the 'timer' property from storage and attaching it to a 'timer' prop.
 
 ```
-import {deep} from 'deep-storage/react';
+import {deep} from 'deep-storage-react';
 
 class TimerView extends React.Component {
     render() {
