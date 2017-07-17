@@ -3,7 +3,7 @@
 Subscribes to a path
 
 ```
-const storage = new DeepStorage({
+const storage = deepStorage({
     companies: {
         'd24d59de': {
             id: 'd24d59de'

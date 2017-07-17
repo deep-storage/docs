@@ -3,7 +3,7 @@
 Returns the current state
 
 ```
-const storage = new DeepStorage({
+const storage = deepStorage({
     count: 1
 });
 

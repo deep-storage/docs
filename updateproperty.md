@@ -3,7 +3,7 @@
 Updates a value one level down in the state tree
 
 ```
-const storage = new DeepStorage({
+const storage = deepStorage({
     count: 1
 });
 

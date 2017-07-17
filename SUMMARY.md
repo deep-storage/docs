@@ -12,7 +12,7 @@
     * [stateIn](statein.md)
     * [deep](deep.md)
     * [subscription](subscription.md)
-  * Subscription
+  * [Subscription](subscription.md)
     * [subscribeTo](subscribeto.md)
     * [cancel](cancel.md)
   * [deep hoc](deep-hoc.md)

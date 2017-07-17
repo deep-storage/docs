@@ -1,9 +1,9 @@
 # DeepStorage deep
 
-Returns a new DeepStorage instance that only operates against a part of the state tree. 
+Returns a new DeepStorage instance that only operates against a part of the state tree.
 
 ```
-const storage = new DeepStorage({
+const storage = deepStorage({
     companies: {
         'd24d59de': {
             id: 'd24d59de'
