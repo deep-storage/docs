@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Going Deeper](going-deeper.md)
 * Api Overview
-  * [DeepStorage](deepstorage.md)
+  * DeepStorage
     * [constructor](api-deepstorage-constructor.md)
     * [setIn](api-deepstorage-setin.md)
     * [updateIn](api-deepstorage-updatein.md)
@@ -12,7 +12,7 @@
     * [state](api-deepstorage-state.md)
     * [deep](api-deepstorage-deep.md)
     * [subscription](api-deepstorage-subscription.md)
-  * [DeepSubscription](deep-subscription.md)
+  * DeepSubscription
     * [subscribeTo](api-deepsubscription-subscribeto.md)
     * [cancel](api-deepsubscription-cancel.md)
   * DeepAsync
@@ -23,4 +23,6 @@
     * [completed](api-deepasync-completed.md)
     * [status](api-deepasync-status.md)
   * [deep hoc](deep-hoc.md)
+
+
 
