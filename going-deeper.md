@@ -3,7 +3,9 @@
 Deep Storage aims to make it easy to have a single state tree but be able to see localised views of it.
 
 ```
-const storage = new DeepStorage({
+import deepStorage from 'deep-storage';
+
+const storage = deepStorage({
     companies: {
         'ccc1c7b8': {
             id: 'ccc1c7b8',
