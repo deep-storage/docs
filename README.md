@@ -52,7 +52,7 @@ class TimerView extends React.Component {
     }
 };
 
-const DeepTimerView = deep(storage, {timer: ['timer']})(TimerView);
+const DeepTimerView = deep({timer: storage.deep('timer')})(TimerView);
 
 ReactDOM.render((
     <DeepTimerView resetTimer={resetTimer}/>
