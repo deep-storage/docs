@@ -1,5 +1,7 @@
 # DeepStorage subscription
 
+_subscription: \(callback: \(path, newState, oldState\) =&gt; void\) =&gt; DeepSubscription;_
+
 Creates a new subscription
 
 ```

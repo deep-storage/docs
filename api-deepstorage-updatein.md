@@ -1,5 +1,7 @@
 # DeepStorage updateIn
 
+_updateIn: \(...path\) =&gt; \(callback\) =&gt; Promise;_
+
 Updates a value in the state tree e.g.
 
 ```

@@ -1,5 +1,7 @@
 # DeepStorage setIn
 
+_setIn: \(...path\) =&gt; \(newValue\) =&gt; Promise;_
+
 Sets a value in the state tree e.g.
 
 ```

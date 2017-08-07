@@ -1,6 +1,8 @@
 # DeepAsync constructor
 
-Create a new deepAsync using the deepAsync default method from 'deep-storage/async'. 
+_deepAsync = \(storage, process: \(request\) =&gt; Promise\)_
+
+Create a new deepAsync using the deepAsync default method from 'deep-storage/async'.
 
 ```
 import deepStorage from 'deep-storage';

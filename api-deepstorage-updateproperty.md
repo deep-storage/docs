@@ -1,5 +1,7 @@
 # DeepStorage updateProperty
 
+_updateProperty: \(key, callback\) =&gt; Promise;_
+
 Updates a value one level down in the state tree
 
 ```

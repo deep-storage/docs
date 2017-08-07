@@ -1,5 +1,7 @@
 # DeepStorage constructor
 
+_deepStorage\(initialState\): DeepStorage_
+
 Creates a new DeepStorage instance with initial state:
 
 ```

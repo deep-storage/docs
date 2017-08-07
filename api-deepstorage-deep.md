@@ -1,5 +1,7 @@
 # DeepStorage deep
 
+_deep: \(...path\) =&gt; DeepStorage;_
+
 Returns a new DeepStorage instance that only operates against a part of the state tree.
 
 ```

@@ -1,5 +1,7 @@
 # Subscription subscribeTo
 
+_subscribeTo: \(...path\) =&gt; void;_
+
 Subscribes to a path
 
 ```

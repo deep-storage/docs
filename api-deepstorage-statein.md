@@ -1,5 +1,7 @@
 # DeepStorage state
 
+_stateIn: \(...path\) =&gt; DeepState;_
+
 Returns the part of the state tree under a path
 
 ```

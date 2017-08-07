@@ -22,5 +22,5 @@
     * [response](api-deepasync-response.md)
     * [completed](api-deepasync-completed.md)
     * [status](api-deepasync-status.md)
-  * [deep hoc](deep-hoc.md)
+  * [connect hoc](deep-hoc.md)
 
