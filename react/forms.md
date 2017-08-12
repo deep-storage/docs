@@ -1,4 +1,4 @@
-# Deep Storage  Forms
+# Deep Storage Forms
 
 deep-storage-react forms simplify managing form state.
 
@@ -42,7 +42,6 @@ const NameForm = props => {
 const DeepNameForm = connect(
    { form }
 )(NameForm);
-
 ```
 
 
