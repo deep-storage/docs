@@ -33,7 +33,7 @@ ReactDOM.render((
 
 _connect\(deepProps, ownProps?\)\(Component\)_
 
-The connect method takes in 2 arguments. The first is a set of properties to pull out of a deep storage store and connect to the component. The second is a regular set of props to pass into the component. 
+The connect method takes in 2 arguments. The first is a set of properties to pull out of a deep storage store and connect to the component. The second is a regular set of props to pass into the component.
 
 The values in deepProps can either be a deep storage store or a 'factory' that returns a deep storage store. In the second case the object must have a property called 'storage'. This is useful for creating 'services' i.e. objects that have state backed by deep storage but have additional functionality attached. The service will get passed into the Component as a prop and the connect method will subscribe to any changes in the internal state.
 
@@ -71,8 +71,23 @@ class App extends Component {
 const DeepApp = connect(
     {authentication},
 )(App);
-
 ```
 
 Deep storage has a helper property called 'props' that you can use to connect all of the state from storage
+
+```
+const storage = deepStorage({
+    date: new Date()
+});
+
+const DateView = props => (
+    <a>{props.date}</a>
+);
+
+const DeepDateView = connect(
+    storage.props
+)(DateView);
+```
+
+
 
