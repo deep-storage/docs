@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Going Deeper](going-deeper.md)
 * [React](react.md)
-  * Forms
+  * [Forms](react/forms.md)
 * Api Overview
   * [DeepStorage](deepstorage.md)
     * [constructor](api-deepstorage-constructor.md)
