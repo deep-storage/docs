@@ -11,7 +11,7 @@ Key features of Deep Storage:
 
 ## Examples
 
-* [SAAS React Starter App](https://github.com/deep-storage/examples/tree/master/react-saas)
+* [Real World Example](https://github.com/deep-storage/examples/tree/master/react-saas)
 * [TodoMVC](https://github.com/deep-storage/examples/tree/master/react-todomvc)
 
 ## Installation
