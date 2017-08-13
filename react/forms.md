@@ -3,7 +3,7 @@
 deep-storage-react forms simplify managing form state.
 
 ```
-// a form that captures a name
+// validates the name field on the form
 class NameValidator {
   validate(form, field) {
     const data = form.data();
@@ -19,6 +19,7 @@ const storage = deepStorage();
 
 const form = deepForm(storage.deep('form'), new NameValidator(), { name: '' });
 
+// a form with a 'name' field
 const NameForm = props => {
   const name = form.fields.name;
   return (
@@ -39,6 +40,7 @@ const NameForm = props => {
   )
 }
 
+// connect the form to deep storage
 const DeepNameForm = connect(
    { form }
 )(NameForm);
