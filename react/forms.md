@@ -1,6 +1,6 @@
 # Deep Storage Forms
 
-deep-storage-react forms simplify managing form state. 
+deep-storage-react forms simplify managing form state.
 
 ## Getting started
 
