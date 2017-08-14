@@ -30,7 +30,7 @@ const subscription = storage.subscription((path, newState, oldState) => {
 subscription.subscribeTo('employees');
 
 // triggers the subscription above
-employeeStorage.updateIn('92cfdbe4', name)(name => 'Bob Smith');
+await employeeStorage.updateIn('92cfdbe4', name)(name => 'Bob Smith');
 ```
 
 ## Why is this useful?

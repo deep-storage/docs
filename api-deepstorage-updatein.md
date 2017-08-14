@@ -15,7 +15,7 @@ const storage = deepStorage({
 });
 
 // set company 'd24d59de''s name to 'github'
-storage.updateIn('companies', 'd24d59de', 'name')(prev => prev.toLowerCase());
+await storage.updateIn('companies', 'd24d59de', 'name')(prev => prev.toLowerCase());
 ```
 
 updateIn will trigger callbacks to subscribers interested in the part of the state tree that's being updated. The updateIn callback should not mutate the previous value.
@@ -27,7 +27,7 @@ const storage = deepStorage({
 });
 
 // set company 'd24d59de''s name to 'Google'
-storage.setIn('companies', 'd24d59de')(prevState => { name: 'Google' });
+await storage.setIn('companies', 'd24d59de')(prevState => { name: 'Google' });
 
 console.log(storage.state);
 

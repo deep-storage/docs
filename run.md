@@ -12,7 +12,7 @@ const asyncIpJson = deepAsync(
         return await response.json();
     }
 );
-asyncIpJson.run();
+await asyncIpJson.run();
 ```
 
 
