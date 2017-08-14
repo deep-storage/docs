@@ -2,7 +2,7 @@
 
 _subscription: \(callback: \(path, newState, oldState\) =&gt; void\) =&gt; DeepSubscription;_
 
-Creates a new subscription
+Creates a new subscription.
 
 ```
 const storage = deepStorage({
@@ -27,5 +27,5 @@ storage.setIn('companies', 'd24d59de', 'name')('Google');
 subscription.cancel();
 ```
 
-
+Multiple paths can be subscribed to in a single subscription using the subscribeTo method. A subscription is cancelled using the cancel method.
 

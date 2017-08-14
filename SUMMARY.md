@@ -14,7 +14,7 @@
     * [state](api-deepstorage-state.md)
     * [deep](api-deepstorage-deep.md)
     * [subscription](api-deepstorage-subscription.md)
-  * DeepSubscription
+  * [DeepSubscription](deepsubscription.md)
     * [subscribeTo](api-deepsubscription-subscribeto.md)
     * [cancel](api-deepsubscription-cancel.md)
   * DeepAsync
@@ -25,6 +25,4 @@
     * [completed](api-deepasync-completed.md)
     * [status](api-deepasync-status.md)
   * [connect hoc](deep-hoc.md)
-
-
 
