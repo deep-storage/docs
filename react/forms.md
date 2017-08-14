@@ -75,6 +75,7 @@ const NameForm = props => {
         onChange={form.changeEvent}
         onBlur={form.blurEvent}/>
       {
+        // only show an error on a field that has been touched and has an error
         name.touched && name.error
         ?
         (<div>{name.error}</div>)
