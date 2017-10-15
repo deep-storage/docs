@@ -17,7 +17,7 @@
   * [DeepSubscription](deepsubscription.md)
     * [subscribeTo](api-deepsubscription-subscribeto.md)
     * [cancel](api-deepsubscription-cancel.md)
-  * DeepAsync
+  * [DeepAsync](deepasync.md)
     * [constructor](api-deepasync-constructor.md)
     * [run](run.md)
     * [request](api-deepasync-request.md)

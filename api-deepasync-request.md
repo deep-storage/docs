@@ -4,7 +4,7 @@
     import deepAsync from 'deep-storage/async';
 
     const storage = deepStorage({});
-    const asyncIpJson = deepAsync(
+    const asyncIpJson = await deepAsync(
         storage.deep('ipJson'),
         async (ip) => {
             const response = await fetch.get(`http://ip-api.com/json/${ip}`);
