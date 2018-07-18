@@ -1,5 +1,7 @@
 # React connect
 
+connect_: \(storageProps, regularProps, otherStorages?\) =&gt; \(component\) =&gt; React.CompentType;_
+
 Connect deep storage to a React component
 
 ```
