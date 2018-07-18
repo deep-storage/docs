@@ -5,7 +5,7 @@ Connect deep storage to a React component
 ```
 import * as React from 'react';
 import { connect } from 'deep-storage-react';
-import deepStorage from 'deep-storage';
+import { deepStorage } from 'deep-storage';
 
 const storage = deepStorage({
     date: new Date()

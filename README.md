@@ -17,7 +17,7 @@ Key features of Deep Storage:
 ## Installation
 
 ```
-yarn install deep-storage
+yarn add deep-storage
 
 # for react bindings
 yarn install deep-storage-react
@@ -30,7 +30,7 @@ yarn install deep-storage-react
 Initialise DeepStorage with a regular JavaScript object
 
 ```
-import deepStorage from 'deep-storage';
+import { deepStorage } from 'deep-storage';
 
 const storage = deepStorage({
     timer: 0
@@ -70,11 +70,11 @@ All state changes go through storage so that subscribers are notified.
 
 ```
 function resetTimer() {
-    storage.setIn('timer')(0);
+    storage.deep('timer').set(0);
 }
 
 setInterval(function tick() {
-    storage.updateIn('timer')(prev => prev + 1);
+    storage.deep('timer').update(prev => prev + 1);
 }, 1000);
 ```
 

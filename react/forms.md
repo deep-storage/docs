@@ -39,9 +39,7 @@ class NameValidator {
 The deepForm method from 'deep-storage-react' is used to construct deep forms. It takes in a deep storage, a validator and an initial state of the form.
 
 ```
-const storage = deepStorage();
-
-const form = deepForm(storage.deep('form'), new NameValidator(), { name: '' });
+const form = deepForm(new NameValidator(), { name: '' });
 ```
 
 ### Create a react component that uses the form
@@ -88,7 +86,9 @@ const NameForm = props => {
 
 // connect the form to deep storage
 const DeepNameForm = connect(
-   { form }
+   {},
+   { form },
+   [form.storage]
 )(NameForm);
 ```
 

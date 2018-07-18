@@ -24,13 +24,15 @@ const storage = deepStorage({
 const employeesStorage = storage.deep('employees');
 const companiesStorage = storage.deep('companies');
 
-const subscription = storage.subscription((path, newState, oldState) => {
+const subscriber = new Subscriber();
+
+subscriber.onChange((path, newState, oldState) => {
     console.log(path, 'updated');
 });
-subscription.subscribeTo('employees');
+subscription.deep('employees').addSubscriber(subscriber);
 
 // triggers the subscription above
-await employeeStorage.updateIn('92cfdbe4', name)(name => 'Bob Smith');
+await employeeStorage.deep('92cfdbe4').deep(name).update(name => 'Bob Smith');
 ```
 
 ## Why is this useful?

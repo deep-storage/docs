@@ -5,7 +5,7 @@ _deepStorage\(initialState\): DeepStorage_
 Creates a new DeepStorage instance with initial state:
 
 ```
-import deepStorage from 'deep-storage';
+import { deepStorage } from 'deep-storage';
 
 const storage = deepStorage({ timer: 0 });
 ```

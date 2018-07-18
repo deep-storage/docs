@@ -7,7 +7,7 @@ The following code creates a link that is attached to deep storage. When a user 
 ```
 import * as React from 'react';
 import { connect } from 'deep-storage-react';
-import deepStorage from 'deep-storage';
+import { deepStorage } from 'deep-storage';
 
 const storage = deepStorage({
     date: new Date()

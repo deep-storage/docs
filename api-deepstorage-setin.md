@@ -1,6 +1,6 @@
-# DeepStorage setIn
+# DeepStorage set
 
-_setIn: \(...path\) =&gt; \(newValue\) =&gt; Promise;_
+_set: \(newValue\) =&gt; Promise;_
 
 Sets a value in the state tree e.g.
 
@@ -15,7 +15,7 @@ const storage = deepStorage({
 });
 
 // set company 'd24d59de''s name to 'Google'
-await storage.setIn('companies', 'd24d59de', 'name')('Google');
+await storage.deep('companies').deep('d24d59de').deep('name').set('Google');
 ```
 
 setIn is essentially a shortcut for an updateIn where the old value is ignored. setIn will trigger callbacks to subscribers interested in the part of the state tree that's being updated.
@@ -27,7 +27,7 @@ const storage = deepStorage({
 });
 
 // set company 'd24d59de''s name to 'Google'
-await storage.setIn('companies', 'd24d59de', 'name')('Google');
+await storage.deep('companies').deep('d24d59de').deep('name').set('Google');
 
 console.log(storage.state);
 

@@ -1,6 +1,6 @@
-# DeepStorage subscription
+# DeepStorage addSubscriber
 
-_subscription: \(callback: \(path, newState, oldState\) =&gt; void\) =&gt; DeepSubscription;_
+addSubscriber_: \(subscriber: Subscriber\) =&gt; void;_
 
 Creates a new subscription.
 
@@ -14,18 +14,20 @@ const storage = deepStorage({
     }
 });
 
-const subscription = storage.subscription((path, newState, oldState) => {
+const subscriber = new Subscriber();
+
+subscriber.onChange((path, newState, oldState) => {
     console.log('change!');
 });
 
-subscription.subscribeTo('companies', 'd24d59de');
+storage.deep('companies').deep('d24d59de').addSubscriber(subscriber);
 
-storage.setIn('companies', 'd24d59de', 'name')('Google');
+storage.deep('companies').deep('d24d59de').deep('name').set('Google');
 
 // outputs: change!
 
-subscription.cancel();
+storage.deep('companies').deep('d24d59de').removeSubscriber(subscriber);
 ```
 
-Multiple paths can be subscribed to in a single subscription using the subscribeTo method. A subscription is cancelled using the cancel method.
+Use addSubscriber to subscribe to change events in deep storage. Use removeSubscriber to stop listening to change events.
 
