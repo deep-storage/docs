@@ -5,7 +5,7 @@ DeepAsync is a wrapper around a deep storage that keeps track of the state of an
 ```
 import { deepAsync } from 'deep-storage';
 
-const asyncIpJson = await deepAsync(
+const asyncIpJson = deepAsync(
     async () => {
         const response = await fetch.get('http://ip-api.com/json');
         return await response.json();

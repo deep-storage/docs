@@ -7,7 +7,7 @@ Create a new deepAsync using the deepAsync default method from 'deep-storage'.
 ```
 import { deepAsync } from 'deep-storage';
 
-const asyncIpJson = await deepAsync(
+const asyncIpJson = deepAsync(
     async () => {
         const response = await fetch.get('http://ip-api.com/json');
         return await response.json();
