@@ -15,10 +15,10 @@ const asyncIpJson = await deepAsync(
 console.log(asyncIpJson.completed); // false
 console.log(asyncIpJson.data);      // undefined
 
-await asyncIpJson.run();
+await asyncIpJson.run();            // goes through created, running, completed
 
 console.log(asyncIpJson.completed); // true
-console.log(asyncIpJson.data);      // response of http://ip-api.com/json
+console.log(asyncIpJson.data);      // response of http://ip-api.com/json (assuming it succeeded)
 ```
 
 
