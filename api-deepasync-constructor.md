@@ -2,7 +2,7 @@
 
 _deepAsync = \(process: \(request\) =&gt; Promise\): Promise_
 
-Create a new deepAsync using the deepAsync default method from 'deep-storage/async'.
+Create a new deepAsync using the deepAsync default method from 'deep-storage'.
 
 ```
 import { deepAsync } from 'deep-storage';
@@ -13,6 +13,14 @@ const asyncIpJson = await deepAsync(
         return await response.json();
     }
 );
+
+console.log(asyncIpJson.completed); // false
+console.log(asyncIpJson.data);      // undefined
+
+await asyncIpJson.run();
+
+console.log(asyncIpJson.completed); // true
+console.log(asyncIpJson.data);      // response of http://ip-api.com/json
 ```
 
 
