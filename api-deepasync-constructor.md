@@ -1,6 +1,6 @@
 # DeepAsync constructor
 
-_deepAsync = \(process: \(request\) =&gt; Promise\): Promise_
+_deepAsync = \(process: \(request\) =&gt; Promise\): DeepAsync_
 
 Create a new deepAsync using the deepAsync default method from 'deep-storage'.
 
