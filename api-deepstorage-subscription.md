@@ -21,7 +21,6 @@ subscriber.onChange((path, newState, oldState) => {
 });
 
 storage.deep('companies').deep('d24d59de').addSubscriber(subscriber);
-
 storage.deep('companies').deep('d24d59de').deep('name').set('Google');
 
 // outputs: change!
